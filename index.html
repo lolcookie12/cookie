@@ -6,7 +6,7 @@
     <title>Hello World</title>
     <style>
         .skibidi-button {
-            background-color: pink;
+            background-color: red;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -18,10 +18,21 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        .gif-container {
+            margin-top: 20px;
+        }
     </style>
+    <script>
+        function showGif() {
+            const gifContainer = document.getElementById('gifContainer');
+            gifContainer.innerHTML = '<img src="https://github.com/lolcookie12/booba/raw/main/11172.gif" alt="Skibidi GIF">';
+        }
+    </script>
 </head>
 <body>
     <h1>Hello World</h1>
-    <button class="skibidi-button" onclick="window.open('https://github.com/lolcookie12/booba/blob/main/11172.gif', '_blank')">Skibidi</button>
+    <button class="skibidi-button" onclick="showGif()">Skibidi</button>
+    <div id="gifContainer" class="gif-container"></div>
 </body>
 </html>
+
